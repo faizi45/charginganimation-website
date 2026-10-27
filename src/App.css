@@ -1,0 +1,262 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0f2027 0%, #11998e 60%, #38ef7d 100%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 30px rgba(56, 239, 125, 0.6);
+}
+
+/* Main */
+.main {
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e0fff4 0%, #b8f5e0 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.download-button {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.play-store-badge {
+  height: 80px;
+  width: auto;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2d3748;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f7fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.feature-card p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+  background: #f7fafc;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.app-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.info-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.info-item strong {
+  color: #11998e;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Privacy Section */
+.privacy {
+  padding: 4rem 0;
+  background: white;
+}
+
+.privacy-features {
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.privacy-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.checkmark {
+  color: #48bb78;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.privacy-item p {
+  color: #4a5568;
+  font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #0f2027 0%, #11998e 60%, #38ef7d 100%);
+  text-align: center;
+  color: white;
+}
+
+.cta-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  background: #2d3748;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer-links a {
+  color: #38ef7d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #7cf5a8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .play-store-badge {
+    height: 60px;
+  }
+}
